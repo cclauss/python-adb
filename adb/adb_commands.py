@@ -31,6 +31,11 @@ from adb import adb_protocol
 from adb import common
 from adb import filesync_protocol
 
+try:
+    file           # Python 2
+except NameError:  # Python 3
+    file = io.BaseIO
+
 # From adb.h
 CLASS = 0xFF
 SUBCLASS = 0x42
