@@ -32,7 +32,7 @@ try:
     file           # Python 2
 except NameError:  # Python 3
     import io
-    file = io.BaseIO
+    file = io.IOBase
 
 # Default mode for pushed files.
 DEFAULT_PUSH_MODE = stat.S_IFREG | stat.S_IRWXU | stat.S_IRWXG

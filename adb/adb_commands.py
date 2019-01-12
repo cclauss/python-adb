@@ -34,7 +34,7 @@ from adb import filesync_protocol
 try:
     file           # Python 2
 except NameError:  # Python 3
-    file = io.BaseIO
+    file = io.IOBase
 
 # From adb.h
 CLASS = 0xFF
